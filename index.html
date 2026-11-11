@@ -1,131 +1,398 @@
 
-<section class="enquiry" id="enquiry">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WIL & COMPANY | Insolvency Practitioners</title>
+<meta name="description" content="WIL & COMPANY Insolvency Practitioners, LAPF House, Bulawayo, Zimbabwe.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263449;
+    line-height: 1.7;
+    background: #ffffff;
+}
+
+header {
+    background: #10233d;
+    padding: 18px 20px;
+    text-align: center;
+    border-bottom: 4px solid #c8a24a;
+}
+
+.logo {
+    width: 100%;
+    max-width: 340px;
+    max-height: 125px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+nav {
+    background: #172f4e;
+    padding: 13px 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 13px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4af63;
+}
+
+.hero {
+    background: linear-gradient(135deg, #10233d, #263f5e);
+    color: white;
+    text-align: center;
+    padding: 95px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #d4af63;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 17px;
+    color: #e6e9ed;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 28px;
+    background: #c8a24a;
+    color: #10233d;
+    padding: 13px 27px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 65px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #10233d;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #c8a24a;
+    margin: 12px auto;
+}
+
+.about {
+    background: #f3f5f7;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+}
+
+.services {
+    background: #ffffff;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.service-card {
+    background: #f5f6f8;
+    padding: 28px 22px;
+    border-bottom: 4px solid #c8a24a;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(16,35,61,0.07);
+}
+
+.service-card h3 {
+    color: #10233d;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 14px;
+}
+
+.contact {
+    background: #10233d;
+    color: white;
+    text-align: center;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin: 12px 0;
+}
+
+.contact a {
+    color: #d4af63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-button,
+.directions-button {
+    display: inline-block;
+    margin: 20px 8px 0;
+    background: #c8a24a;
+    color: #10233d !important;
+    padding: 13px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map-section {
+    background: #f3f5f7;
+    text-align: center;
+}
+
+.map-section p {
+    margin-bottom: 25px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 380px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(16,35,61,0.12);
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 22px;
+    background: #c8a24a;
+    color: #10233d;
+    padding: 13px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #0b192b;
+    color: #dce1e7;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero {
+        padding: 70px 18px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .map-frame {
+        height: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img
+        src="B4C2B60E-A2A5-4E11-8A05-4FF11F11FE98.png"
+        alt="Wil & Company Insolvency Practitioners Logo"
+        class="logo">
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Find Us</a>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Professional <span>Insolvency</span> Solutions</h1>
+    <p>
+        Welcome to WIL & COMPANY Insolvency Practitioners.
+        We provide professional guidance and solutions in insolvency
+        and business-related matters.
+    </p>
+    <a href="#contact">Contact Our Office</a>
+</section>
+
+<section class="about" id="about">
     <div class="container">
-        <h2 class="section-title">Client Enquiry Form</h2>
-
-        <p class="enquiry-intro">
-            Complete the form below and choose whether to send
-            your enquiry through WhatsApp or email.
+        <h2 class="section-title">About Wil & Company</h2>
+        <p>
+            WIL & COMPANY is an insolvency practitioners firm based
+            in Bulawayo, Zimbabwe. We are committed to providing
+            professional assistance and guidance in insolvency-related
+            matters and helping clients understand the options available
+            to them.
         </p>
-
-        <form class="enquiry-form" id="clientEnquiry">
-
-            <label for="clientName">Full Name *</label>
-            <input type="text" id="clientName"
-                placeholder="Enter your full name" required>
-
-            <label for="clientPhone">Telephone Number *</label>
-            <input type="tel" id="clientPhone"
-                placeholder="Enter your telephone number" required>
-
-            <label for="clientEmail">Email Address</label>
-            <input type="email" id="clientEmail"
-                placeholder="Enter your email address">
-
-            <label for="service">How can we assist you? *</label>
-            <select id="service" required>
-                <option value="">Select a service</option>
-                <option>Company Liquidation</option>
-                <option>Corporate Insolvency</option>
-                <option>Business Restructuring</option>
-                <option>Business Advisory</option>
-                <option>Other Enquiry</option>
-            </select>
-
-            <label for="clientMessage">Your Message *</label>
-            <textarea id="clientMessage"
-                placeholder="Please briefly explain your enquiry"
-                required></textarea>
-
-            <button type="button" class="submit-button"
-                onclick="sendWhatsApp()">
-                Send Enquiry via WhatsApp
-            </button>
-
-            <button type="button" class="email-button"
-                onclick="sendEmail()">
-                Send Enquiry via Email
-            </button>
-
-            <p class="form-note">
-                Choose your preferred method. Review your enquiry
-                before sending it.
-            </p>
-
-        </form>
     </div>
 </section>
 
-<style>
-.email-button {
-    display: block;
-    width: 100%;
-    margin-top: 12px;
-    padding: 13px 20px;
-    background: #10233d;
-    color: white;
-    border: 2px solid #c8a24a;
-    border-radius: 4px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-}
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
 
-.email-button:hover {
-    background: #263f5e;
-}
-</style>
+        <div class="service-grid">
 
-<script>
-function getEnquiry() {
-    const form = document.getElementById("clientEnquiry");
+            <div class="service-card">
+                <h3>Company Liquidation</h3>
+                <p>Assistance with company liquidation processes and related matters.</p>
+            </div>
 
-    if (!form.reportValidity()) {
-        return null;
-    }
+            <div class="service-card">
+                <h3>Corporate Insolvency</h3>
+                <p>Guidance on corporate insolvency matters and available options.</p>
+            </div>
 
-    return {
-        name: document.getElementById("clientName").value.trim(),
-        phone: document.getElementById("clientPhone").value.trim(),
-        email: document.getElementById("clientEmail").value.trim(),
-        service: document.getElementById("service").value,
-        message: document.getElementById("clientMessage").value.trim()
-    };
-}
+            <div class="service-card">
+                <h3>Business Restructuring</h3>
+                <p>Assistance with business restructuring and related processes.</p>
+            </div>
 
-function getEnquiryMessage(data) {
-    return "NEW CLIENT ENQUIRY - WIL & COMPANY\n\n" +
-        "Full Name: " + data.name + "\n" +
-        "Telephone: " + data.phone + "\n" +
-        "Email: " + (data.email || "Not provided") + "\n" +
-        "Service Required: " + data.service + "\n\n" +
-        "Message:\n" + data.message;
-}
+            <div class="service-card">
+                <h3>Business Advisory</h3>
+                <p>Professional guidance on business-related financial and insolvency matters.</p>
+            </div>
 
-function sendWhatsApp() {
-    const data = getEnquiry();
+        </div>
+    </div>
+</section>
 
-    if (!data) return;
+<section class="contact" id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
 
-    const message = encodeURIComponent(getEnquiryMessage(data));
+        <p>We welcome your enquiries.</p>
 
-    window.location.href =
-        "https://wa.me/263779084912?text=" + message;
-}
+        <div class="contact-details">
 
-function sendEmail() {
-    const data = getEnquiry();
+            <p>
+                <strong>Telephone:</strong>
+                <a href="tel:+263292264190">+263 292 264 190</a>
+            </p>
 
-    if (!data) return;
+            <p>
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/263779084912">+263 779 084 912</a>
+            </p>
 
-    const subject = encodeURIComponent(
-        "New Client Enquiry - " + data.service
-    );
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:wilandcompanypractitioners@gmail.com">
+                    wilandcompanypractitioners@gmail.com
+                </a>
+            </p>
 
-    const body = encodeURIComponent(getEnquiryMessage(data));
+            <p>
+                <strong>Office Address:</strong><br>
+                Suite 703, 7th Floor, LAPF House,<br>
+                8th Avenue, between Jason Moyo and Fife Street,<br>
+                Bulawayo, Zimbabwe.
+            </p>
 
-    window.location.href =
-        "mailto:wilandcompanypractitioners@gmail.com" +
-        "?subject=" + subject + "&body=" + body;
-}
-</script>
+            <a class="contact-button"
+               href="https://wa.me/263779084912">
+                Chat With Us on WhatsApp
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<section class="map-section" id="location">
+    <div class="container">
+        <h2 class="section-title">Find Our Office</h2>
+
+        <p>
+            Visit us at Suite 703, 7th Floor, LAPF House,
+            Bulawayo, Zimbabwe.
+        </p>
+
+        <iframe
+            class="map-frame"
+            src="https://www.google.com/maps?q=LAPF+House,+8th+Avenue+and+Jason+Moyo,+Bulawayo,+Zimbabwe&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps location of LAPF House, Bulawayo">
+        </iframe>
+
+        <a class="map-link"
+           href="https://www.google.com/maps/search/?api=1&query=LAPF+House+8th+Avenue+Jason+Moyo+Bulawayo+Zimbabwe"
+           target="_blank"
+           rel="noopener">
+            Get Directions on Google Maps
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 WIL & COMPANY Insolvency Practitioners.</p>
+    <p>Suite 703, 7th Floor, LAPF House, Bulawayo, Zimbabwe.</p>
+</footer>
+
+</body>
+</html>
