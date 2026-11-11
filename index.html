@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WIL & COMPANY | Insolvency Practitioners</title>
-<meta name="description" content="WIL & COMPANY Insolvency Practitioners, based at LAPH House, Bulawayo, Zimbabwe.">
+<meta name="description" content="WIL & COMPANY Insolvency Practitioners, LAPF House, Bulawayo, Zimbabwe.">
 
 <style>
 * {
@@ -66,7 +66,6 @@ nav a:hover {
 .hero h1 {
     font-size: 38px;
     margin-bottom: 18px;
-    color: #ffffff;
 }
 
 .hero h1 span {
@@ -89,10 +88,6 @@ nav a:hover {
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
-}
-
-.hero a:hover {
-    background: #ffffff;
 }
 
 section {
@@ -128,7 +123,6 @@ section {
 .about p {
     max-width: 850px;
     margin: auto;
-    font-size: 16px;
 }
 
 .services {
@@ -183,17 +177,44 @@ section {
     font-weight: bold;
 }
 
-.contact a:hover {
-    color: white;
-}
-
-.contact-button {
+.contact-button,
+.directions-button {
     display: inline-block;
-    margin-top: 25px;
+    margin: 20px 8px 0;
     background: #c8a24a;
     color: #10233d !important;
     padding: 13px 25px;
     border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.map-section {
+    background: #f3f5f7;
+    text-align: center;
+}
+
+.map-section p {
+    margin-bottom: 25px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 380px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(16,35,61,0.12);
+}
+
+.map-link {
+    display: inline-block;
+    margin-top: 22px;
+    background: #c8a24a;
+    color: #10233d;
+    padding: 13px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
@@ -222,6 +243,10 @@ footer {
     .section-title {
         font-size: 25px;
     }
+
+    .map-frame {
+        height: 300px;
+    }
 }
 </style>
 </head>
@@ -240,6 +265,7 @@ footer {
     <a href="#about">About Us</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
+    <a href="#location">Find Us</a>
 </nav>
 
 <section class="hero" id="home">
@@ -273,34 +299,22 @@ footer {
 
             <div class="service-card">
                 <h3>Company Liquidation</h3>
-                <p>
-                    Assistance with company liquidation processes
-                    and related matters.
-                </p>
+                <p>Assistance with company liquidation processes and related matters.</p>
             </div>
 
             <div class="service-card">
                 <h3>Corporate Insolvency</h3>
-                <p>
-                    Guidance on corporate insolvency matters
-                    and available options.
-                </p>
+                <p>Guidance on corporate insolvency matters and available options.</p>
             </div>
 
             <div class="service-card">
                 <h3>Business Restructuring</h3>
-                <p>
-                    Assistance with business restructuring
-                    and related processes.
-                </p>
+                <p>Assistance with business restructuring and related processes.</p>
             </div>
 
             <div class="service-card">
                 <h3>Business Advisory</h3>
-                <p>
-                    Professional guidance on business-related
-                    financial and insolvency matters.
-                </p>
+                <p>Professional guidance on business-related financial and insolvency matters.</p>
             </div>
 
         </div>
@@ -322,9 +336,7 @@ footer {
 
             <p>
                 <strong>WhatsApp:</strong>
-                <a href="https://wa.me/263779084912">
-                    +263 779 084 912
-                </a>
+                <a href="https://wa.me/263779084912">+263 779 084 912</a>
             </p>
 
             <p>
@@ -336,8 +348,8 @@ footer {
 
             <p>
                 <strong>Office Address:</strong><br>
-                Suite 703, 7th Floor, LAPH House,<br>
-                Between Jason Moyo and Fife Street,<br>
+                Suite 703, 7th Floor, LAPF House,<br>
+                8th Avenue, between Jason Moyo and Fife Street,<br>
                 Bulawayo, Zimbabwe.
             </p>
 
@@ -350,9 +362,36 @@ footer {
     </div>
 </section>
 
+<section class="map-section" id="location">
+    <div class="container">
+        <h2 class="section-title">Find Our Office</h2>
+
+        <p>
+            Visit us at Suite 703, 7th Floor, LAPF House,
+            Bulawayo, Zimbabwe.
+        </p>
+
+        <iframe
+            class="map-frame"
+            src="https://www.google.com/maps?q=LAPF+House,+8th+Avenue+and+Jason+Moyo,+Bulawayo,+Zimbabwe&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps location of LAPF House, Bulawayo">
+        </iframe>
+
+        <a class="map-link"
+           href="https://www.google.com/maps/search/?api=1&query=LAPF+House+8th+Avenue+Jason+Moyo+Bulawayo+Zimbabwe"
+           target="_blank"
+           rel="noopener">
+            Get Directions on Google Maps
+        </a>
+    </div>
+</section>
+
 <footer>
     <p>© 2019 WIL & COMPANY Insolvency Practitioners.</p>
-    <p>Suite 703, 7th Floor, LAPH House, Bulawayo, Zimbabwe.</p>
+    <p>Suite 703, 7th Floor, LAPF House, Bulawayo, Zimbabwe.</p>
 </footer>
 
 </body>
