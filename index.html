@@ -185,6 +185,52 @@ section { padding: 75px 7%; }
 
 .about-content p { margin-bottom: 16px; }
 
+/* WHY CHOOSE US */
+
+.why-us {
+    background: var(--navy);
+    color: white;
+}
+
+.why-us .section-title h2 {
+    color: white;
+}
+
+.why-us .section-title p {
+    color: #dce3ec;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.why-card {
+    background: #1b3150;
+    padding: 28px 23px;
+    border-radius: 6px;
+    border-bottom: 3px solid var(--gold);
+}
+
+.why-icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.why-card h3 {
+    color: var(--gold);
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.why-card p {
+    color: #e0e6ef;
+    font-size: 14px;
+}
+
+/* SERVICES */
+
 .services { background: var(--grey); }
 
 .service-grid {
@@ -306,7 +352,10 @@ footer span { color: var(--gold); }
 
     .section-title h2 { font-size: 26px; }
 
-    .contact-button { width: 100%; max-width: 300px; }
+    .contact-button {
+        width: 100%;
+        max-width: 300px;
+    }
 }
 </style>
 </head>
@@ -327,6 +376,7 @@ footer span { color: var(--gold); }
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About Us</a>
+        <a href="#why-us">Why Choose Us</a>
         <a href="#services">Our Services</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -386,6 +436,57 @@ footer span { color: var(--gold); }
             integrity, confidentiality and a commitment
             to finding appropriate solutions for our clients.
         </p>
+    </div>
+</section>
+
+<section class="why-us" id="why-us">
+    <div class="section-title">
+        <h2>Why Choose WIL & COMPANY?</h2>
+        <span></span>
+        <p>
+            We are committed to professional service,
+            practical guidance and responsible client care.
+        </p>
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+            <div class="why-icon">⚖️</div>
+            <h3>Professionalism and Integrity</h3>
+            <p>
+                We value ethical conduct, professionalism
+                and integrity in every engagement.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🤝</div>
+            <h3>Client-Focused Service</h3>
+            <p>
+                We take time to understand each client's
+                needs and circumstances.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">💡</div>
+            <h3>Practical Solutions</h3>
+            <p>
+                We focus on practical approaches to
+                financial, corporate and related challenges.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <div class="why-icon">🔒</div>
+            <h3>Confidentiality and Trust</h3>
+            <p>
+                We treat client information and matters
+                with appropriate care and discretion.
+            </p>
+        </div>
+
     </div>
 </section>
 
@@ -587,7 +688,7 @@ footer span { color: var(--gold); }
     <p><span>WIL & COMPANY</span></p>
     <p>INSOLVENCY PRACTITIONERS</p>
     <p>Guidance. Solutions. A Fresh Start.</p>
-    <p>&copy; 2019 WIL & COMPANY. All Rights Reserved.</p>
+    <p>&copy; 2026 WIL & COMPANY. All Rights Reserved.</p>
     <p>Bulawayo, Zimbabwe.</p>
 </footer>
 
