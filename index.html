@@ -5,195 +5,223 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WIL & COMPANY | Insolvency Practitioners</title>
+<meta name="description" content="WIL & COMPANY Insolvency Practitioners, based at LAPH House, Bulawayo, Zimbabwe.">
 
 <style>
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body{
-font-family:Arial,sans-serif;
-color:#263449;
-line-height:1.7;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263449;
+    line-height: 1.7;
+    background: #ffffff;
 }
 
-header{
-background:#142b4a;
-color:white;
-padding:20px 7%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
+header {
+    background: #10233d;
+    padding: 18px 20px;
+    text-align: center;
+    border-bottom: 4px solid #c8a24a;
 }
 
-.brand{
-display:flex;
-align-items:center;
-justify-content:center;
-position:relative;
-width:300px;
-min-height:110px;
-font-size:25px;
-font-weight:bold;
-letter-spacing:2px;
-text-align:center;
-isolation:isolate;
+.logo {
+    width: 100%;
+    max-width: 340px;
+    max-height: 125px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
 }
 
-.brand::before{
-content:"";
-position:absolute;
-inset:0;
-background-image:url('IMG_3533.jpeg');
-background-repeat:no-repeat;
-background-position:center top;
-background-size:auto 200%;
-opacity:0.12;
-z-index:-1;
+nav {
+    background: #172f4e;
+    padding: 13px 10px;
+    text-align: center;
 }
 
-.brand small{
-display:block;
-font-size:12px;
-font-weight:normal;
-letter-spacing:3px;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 13px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:10px;
-font-size:14px;
+nav a:hover {
+    color: #d4af63;
 }
 
-.hero{
-background:linear-gradient(90deg,#10233d,#344d69);
-color:white;
-text-align:center;
-padding:110px 20px;
+.hero {
+    background: linear-gradient(135deg, #10233d, #263f5e);
+    color: white;
+    text-align: center;
+    padding: 95px 20px;
 }
 
-.hero h1{
-font-size:42px;
-margin-bottom:20px;
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 18px;
+    color: #ffffff;
 }
 
-.hero p{
-max-width:650px;
-margin:auto;
-font-size:18px;
+.hero h1 span {
+    color: #d4af63;
 }
 
-.btn{
-display:inline-block;
-background:white;
-color:#142b4a;
-padding:13px 27px;
-margin:12px 5px;
-text-decoration:none;
-font-weight:bold;
-border-radius:4px;
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 17px;
+    color: #e6e9ed;
 }
 
-section{
-padding:75px 8%;
-text-align:center;
+.hero a {
+    display: inline-block;
+    margin-top: 28px;
+    background: #c8a24a;
+    color: #10233d;
+    padding: 13px 27px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-h2{
-color:#142b4a;
-font-size:30px;
-margin-bottom:20px;
+.hero a:hover {
+    background: #ffffff;
 }
 
-.about{
-background:#f1f3f5;
+section {
+    padding: 65px 20px;
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:22px;
-margin-top:35px;
+.container {
+    max-width: 1100px;
+    margin: auto;
 }
 
-.service{
-padding:30px 20px;
-border:1px solid #ddd;
-border-radius:5px;
-background:white;
+.section-title {
+    text-align: center;
+    color: #10233d;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.service h3{
-color:#142b4a;
-margin-bottom:12px;
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: #c8a24a;
+    margin: 12px auto;
 }
 
-.service p{
-color:#687486;
+.about {
+    background: #f3f5f7;
+    text-align: center;
 }
 
-.contact{
-background:#e9edf1;
+.about p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 16px;
 }
 
-.contact-buttons{
-margin-top:25px;
+.services {
+    background: #ffffff;
 }
 
-.contact-buttons a{
-display:inline-block;
-background:#142b4a;
-color:white;
-text-decoration:none;
-padding:14px 22px;
-margin:8px;
-border-radius:5px;
-font-weight:bold;
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
 }
 
-.contact-buttons a:hover{
-background:#344d69;
+.service-card {
+    background: #f5f6f8;
+    padding: 28px 22px;
+    border-bottom: 4px solid #c8a24a;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(16,35,61,0.07);
 }
 
-footer{
-background:#142b4a;
-color:white;
-text-align:center;
-padding:30px;
+.service-card h3 {
+    color: #10233d;
+    margin-bottom: 12px;
 }
 
-@media(max-width:600px){
-
-.hero h1{
-font-size:30px;
+.service-card p {
+    font-size: 14px;
 }
 
-header{
-justify-content:center;
-text-align:center;
-gap:15px;
+.contact {
+    background: #10233d;
+    color: white;
+    text-align: center;
 }
 
-.brand{
-justify-content:center;
-font-size:21px;
-width:100%;
-min-height:100px;
+.contact .section-title {
+    color: white;
 }
 
-nav a{
-margin:5px;
-font-size:12px;
+.contact-details {
+    margin-top: 20px;
 }
 
-section{
-padding:55px 6%;
+.contact-details p {
+    margin: 12px 0;
 }
 
+.contact a {
+    color: #d4af63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: white;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 25px;
+    background: #c8a24a;
+    color: #10233d !important;
+    padding: 13px 25px;
+    border-radius: 4px;
+}
+
+footer {
+    background: #0b192b;
+    color: #dce1e7;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero {
+        padding: 70px 18px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
 }
 </style>
 </head>
@@ -201,82 +229,130 @@ padding:55px 6%;
 <body>
 
 <header>
-
-<div class="brand">
-<div>
-WIL & COMPANY
-<small>INSOLVENCY PRACTITIONERS</small>
-</div>
-</div>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-</nav>
-
+    <img
+        src="B4C2B60E-A2A5-4E11-8A05-4FF11F11FE98.png"
+        alt="Wil & Company Insolvency Practitioners Logo"
+        class="logo">
 </header>
 
-<div class="hero" id="home">
-<h1>Professional Insolvency Solutions</h1>
-<p>Professional guidance and support for businesses and individuals navigating financial challenges.</p>
-<a href="#contact" class="btn">CONTACT OUR FIRM</a>
-</div>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-<section class="about" id="about">
-<h2>Welcome to Wil & Company</h2>
-<p>Wil & Company Insolvency Practitioners is based in Bulawayo, Zimbabwe. We aim to provide professional guidance and practical support in insolvency and related business matters.</p>
+<section class="hero" id="home">
+    <h1>Professional <span>Insolvency</span> Solutions</h1>
+    <p>
+        Welcome to WIL & COMPANY Insolvency Practitioners.
+        We provide professional guidance and solutions in insolvency
+        and business-related matters.
+    </p>
+    <a href="#contact">Contact Our Office</a>
 </section>
 
-<section id="services">
-<h2>Our Services</h2>
-<p>Professional support for complex financial and business challenges.</p>
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="section-title">About Wil & Company</h2>
+        <p>
+            WIL & COMPANY is an insolvency practitioners firm based
+            in Bulawayo, Zimbabwe. We are committed to providing
+            professional assistance and guidance in insolvency-related
+            matters and helping clients understand the options available
+            to them.
+        </p>
+    </div>
+</section>
 
-<div class="services">
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
 
-<div class="service">
-<h3>Company Liquidation</h3>
-<p>Support with company liquidation processes and related matters.</p>
-</div>
+        <div class="service-grid">
 
-<div class="service">
-<h3>Corporate Insolvency</h3>
-<p>Professional guidance on corporate insolvency matters.</p>
-</div>
+            <div class="service-card">
+                <h3>Company Liquidation</h3>
+                <p>
+                    Assistance with company liquidation processes
+                    and related matters.
+                </p>
+            </div>
 
-<div class="service">
-<h3>Business Restructuring</h3>
-<p>Support in exploring business restructuring options.</p>
-</div>
+            <div class="service-card">
+                <h3>Corporate Insolvency</h3>
+                <p>
+                    Guidance on corporate insolvency matters
+                    and available options.
+                </p>
+            </div>
 
-<div class="service">
-<h3>Business Advisory</h3>
-<p>Practical guidance for businesses facing financial difficulties.</p>
-</div>
+            <div class="service-card">
+                <h3>Business Restructuring</h3>
+                <p>
+                    Assistance with business restructuring
+                    and related processes.
+                </p>
+            </div>
 
-</div>
+            <div class="service-card">
+                <h3>Business Advisory</h3>
+                <p>
+                    Professional guidance on business-related
+                    financial and insolvency matters.
+                </p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
 <section class="contact" id="contact">
-<h2>Contact Wil & Company</h2>
-<p>We welcome enquiries from businesses and individuals.</p>
-<p><strong>Telephone:</strong> +263 292 264 190</p>
-<p><strong>WhatsApp:</strong> +263 779 084 912</p>
-<p><strong>Email:</strong> wilandcompanypractitioners@gmail.com</p>
-<p><strong>Location:</strong> Bulawayo, Zimbabwe</p>
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
 
-<div class="contact-buttons">
-<a href="tel:+263292264190">CALL US</a>
-<a href="https://wa.me/263779084912">WHATSAPP US</a>
-<a href="mailto:wilandcompanypractitioners@gmail.com">EMAIL US</a>
-</div>
+        <p>We welcome your enquiries.</p>
+
+        <div class="contact-details">
+
+            <p>
+                <strong>Telephone:</strong>
+                <a href="tel:+263292264190">+263 292 264 190</a>
+            </p>
+
+            <p>
+                <strong>WhatsApp:</strong>
+                <a href="https://wa.me/263779084912">
+                    +263 779 084 912
+                </a>
+            </p>
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:wilandcompanypractitioners@gmail.com">
+                    wilandcompanypractitioners@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Office Address:</strong><br>
+                Suite 703, 7th Floor, LAPH House,<br>
+                Between Jason Moyo and Fife Street,<br>
+                Bulawayo, Zimbabwe.
+            </p>
+
+            <a class="contact-button"
+               href="https://wa.me/263779084912">
+                Chat With Us on WhatsApp
+            </a>
+
+        </div>
+    </div>
 </section>
 
 <footer>
-<p>WIL & COMPANY | INSOLVENCY PRACTITIONERS</p>
-<p>Bulawayo, Zimbabwe</p>
-<p>© 2019 Wil & Company. All rights reserved.</p>
+    <p>© 2026 WIL & COMPANY Insolvency Practitioners.</p>
+    <p>Suite 703, 7th Floor, LAPH House, Bulawayo, Zimbabwe.</p>
 </footer>
 
 </body>
