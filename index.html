@@ -9,7 +9,8 @@
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:Arial,sans-serif;color:#263449;line-height:1.7}
 header{background:#142b4a;color:white;padding:20px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.brand{font-size:25px;font-weight:bold;letter-spacing:2px}
+.brand{display:flex;align-items:center;gap:15px;font-size:25px;font-weight:bold;letter-spacing:2px}
+.logo{width:75px;height:75px;object-fit:contain;background:white;border-radius:5px;padding:4px}
 .brand small{display:block;font-size:12px;font-weight:normal;letter-spacing:3px}
 nav a{color:white;text-decoration:none;margin:10px;font-size:14px}
 .hero{background:linear-gradient(90deg,#10233d,#344d69);color:white;text-align:center;padding:110px 20px}
@@ -31,6 +32,8 @@ footer{background:#142b4a;color:white;text-align:center;padding:30px}
 @media(max-width:600px){
 .hero h1{font-size:30px}
 header{justify-content:center;text-align:center;gap:15px}
+.brand{justify-content:center;font-size:21px}
+.logo{width:65px;height:65px}
 nav a{margin:5px;font-size:12px}
 section{padding:55px 6%}
 }
@@ -40,8 +43,11 @@ section{padding:55px 6%}
 
 <header>
 <div class="brand">
+<img src="IMG_3533.jpeg" alt="Wil & Company Logo" class="logo">
+<div>
 WIL & COMPANY
 <small>INSOLVENCY PRACTITIONERS</small>
+</div>
 </div>
 <nav>
 <a href="#home">Home</a>
@@ -92,7 +98,6 @@ WIL & COMPANY
 <p><strong>WhatsApp:</strong> +263 779 084 912</p>
 <p><strong>Email:</strong> wilandcompanypractitioners@gmail.com</p>
 <p><strong>Location:</strong> Bulawayo, Zimbabwe</p>
-
 <div class="contact-buttons">
 <a href="tel:+263292264190">CALL US</a>
 <a href="https://wa.me/263779084912">WHATSAPP US</a>
@@ -103,7 +108,7 @@ WIL & COMPANY
 <footer>
 <p>WIL & COMPANY | INSOLVENCY PRACTITIONERS</p>
 <p>Bulawayo, Zimbabwe</p>
-<p>© 2026 Wil & Company. All rights reserved.</p>
+<p>© 2019 Wil & Company. All rights reserved.</p>
 </footer>
 
 </body>
