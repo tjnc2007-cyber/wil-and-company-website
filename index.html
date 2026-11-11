@@ -4,248 +4,311 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>WIL & COMPANY | Insolvency Practitioners</title>
-<meta name="description" content="WIL & COMPANY Insolvency Practitioners, LAPF House, Bulawayo, Zimbabwe.">
+
+<meta name="description" content="WIL & COMPANY Insolvency Practitioners, providing corporate rescue, liquidation, debt recovery, deceased estates, conveyancing and related professional services in Bulawayo, Zimbabwe.">
 
 <style>
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #263449;
+    background: #f5f6f8;
+    color: #303846;
     line-height: 1.7;
-    background: #ffffff;
+}
+
+:root {
+    --navy: #101f36;
+    --navy-light: #1b3150;
+    --gold: #c6a45c;
+    --white: #ffffff;
+    --grey: #eef1f5;
 }
 
 header {
-    background: #10233d;
-    padding: 18px 20px;
-    text-align: center;
-    border-bottom: 4px solid #c8a24a;
+    background: var(--navy);
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.logo {
-    width: 100%;
-    max-width: 340px;
-    max-height: 125px;
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-area img {
+    width: 75px;
+    height: 75px;
     object-fit: contain;
-    display: block;
-    margin: auto;
+}
+
+.logo-text h1 {
+    font-size: 23px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.logo-text p {
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 nav {
-    background: #172f4e;
-    padding: 13px 10px;
-    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    margin: 0 13px;
     font-size: 14px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #d4af63;
+    color: var(--gold);
 }
 
 .hero {
-    background: linear-gradient(135deg, #10233d, #263f5e);
+    background: linear-gradient(
+        rgba(16,31,54,0.92),
+        rgba(16,31,54,0.92)
+    );
     color: white;
     text-align: center;
-    padding: 95px 20px;
+    padding: 100px 20px;
 }
 
-.hero h1 {
-    font-size: 38px;
-    margin-bottom: 18px;
+.hero h2 {
+    font-size: 39px;
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.3;
 }
 
-.hero h1 span {
-    color: #d4af63;
+.hero h2 span {
+    color: var(--gold);
 }
 
 .hero p {
-    max-width: 700px;
-    margin: auto;
+    max-width: 680px;
+    margin: 22px auto;
     font-size: 17px;
-    color: #e6e9ed;
+    color: #e2e6ed;
 }
 
-.hero a {
+.hero-button {
     display: inline-block;
-    margin-top: 28px;
-    background: #c8a24a;
-    color: #10233d;
+    margin-top: 15px;
     padding: 13px 27px;
-    border-radius: 4px;
-    text-decoration: none;
+    background: var(--gold);
+    color: var(--navy);
     font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero-button:hover {
+    background: white;
 }
 
 section {
-    padding: 65px 20px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
+    padding: 75px 7%;
 }
 
 .section-title {
     text-align: center;
-    color: #10233d;
-    font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.section-title::after {
-    content: "";
+.section-title h2 {
+    color: var(--navy);
+    font-size: 31px;
+}
+
+.section-title span {
     display: block;
     width: 65px;
     height: 3px;
-    background: #c8a24a;
+    background: var(--gold);
     margin: 12px auto;
 }
 
 .about {
-    background: #f3f5f7;
+    background: white;
     text-align: center;
 }
 
-.about p {
+.about-content {
     max-width: 850px;
     margin: auto;
 }
 
+.about-content p {
+    margin-bottom: 16px;
+}
+
 .services {
-    background: #ffffff;
+    background: var(--grey);
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 22px;
 }
 
 .service-card {
-    background: #f5f6f8;
-    padding: 28px 22px;
-    border-bottom: 4px solid #c8a24a;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 4px 14px rgba(16,35,61,0.07);
+    background: white;
+    padding: 27px 23px;
+    border-radius: 6px;
+    border-bottom: 3px solid var(--gold);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
 }
 
 .service-card h3 {
-    color: #10233d;
+    color: var(--navy);
+    font-size: 18px;
     margin-bottom: 12px;
 }
 
 .service-card p {
     font-size: 14px;
+    color: #596271;
+}
+
+.service-number {
+    color: var(--gold);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .contact {
-    background: #10233d;
-    color: white;
-    text-align: center;
+    background: white;
 }
 
-.contact .section-title {
-    color: white;
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
 }
 
-.contact-details {
-    margin-top: 20px;
+.contact-card {
+    background: var(--grey);
+    padding: 25px;
+    border-radius: 6px;
 }
 
-.contact-details p {
-    margin: 12px 0;
+.contact-card h3 {
+    color: var(--navy);
+    margin-bottom: 10px;
 }
 
-.contact a {
-    color: #d4af63;
+.contact-card a {
+    color: #263f60;
     text-decoration: none;
-    font-weight: bold;
+    overflow-wrap: anywhere;
 }
 
-.contact-button,
-.directions-button {
-    display: inline-block;
-    margin: 20px 8px 0;
-    background: #c8a24a;
-    color: #10233d !important;
-    padding: 13px 25px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
+.contact-card a:hover {
+    color: #a27b32;
 }
 
 .map-section {
-    background: #f3f5f7;
+    background: var(--grey);
     text-align: center;
 }
 
-.map-section p {
-    margin-bottom: 25px;
-}
-
-.map-frame {
+.map-section iframe {
     width: 100%;
+    max-width: 1000px;
     height: 380px;
     border: 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 14px rgba(16,35,61,0.12);
+    border-radius: 6px;
 }
 
-.map-link {
+.directions-button {
     display: inline-block;
-    margin-top: 22px;
-    background: #c8a24a;
-    color: #10233d;
+    background: var(--navy);
+    color: white;
     padding: 13px 25px;
+    margin-top: 20px;
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
 }
 
-footer {
-    background: #0b192b;
-    color: #dce1e7;
-    text-align: center;
-    padding: 22px 15px;
-    font-size: 13px;
+.directions-button:hover {
+    background: var(--gold);
+    color: var(--navy);
 }
 
-@media (max-width: 600px) {
-    nav a {
-        display: inline-block;
-        margin: 5px 8px;
-        font-size: 13px;
+footer {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 5px;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+@media(max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
     }
 
-    .hero h1 {
+    .logo-area {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .hero h2 {
         font-size: 29px;
     }
 
-    .hero {
-        padding: 70px 18px;
+    section {
+        padding: 55px 6%;
     }
 
-    .section-title {
-        font-size: 25px;
-    }
-
-    .map-frame {
-        height: 300px;
+    .section-title h2 {
+        font-size: 26px;
     }
 }
 </style>
@@ -254,144 +317,266 @@ footer {
 <body>
 
 <header>
-    <img
-        src="B4C2B60E-A2A5-4E11-8A05-4FF11F11FE98.png"
-        alt="Wil & Company Insolvency Practitioners Logo"
-        class="logo">
+    <div class="logo-area">
+        <img src="B4C2B60E-A2A5-4E11-8A05-4FF11F11FE98.png"
+             alt="WIL & COMPANY Logo">
+
+        <div class="logo-text">
+            <h1>WIL & COMPANY</h1>
+            <p>INSOLVENCY PRACTITIONERS</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Our Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#location">Find Us</a>
-</nav>
-
 <section class="hero" id="home">
-    <h1>Professional <span>Insolvency</span> Solutions</h1>
+    <h2>Professional Guidance.<br>
+        <span>Practical Solutions.</span>
+    </h2>
+
     <p>
-        Welcome to WIL & COMPANY Insolvency Practitioners.
-        We provide professional guidance and solutions in insolvency
-        and business-related matters.
+        WIL & COMPANY Insolvency Practitioners provides
+        professional assistance in insolvency, corporate
+        rescue, debt recovery, estates and related services.
     </p>
-    <a href="#contact">Contact Our Office</a>
+
+    <a href="#services" class="hero-button">
+        Explore Our Services
+    </a>
 </section>
 
 <section class="about" id="about">
-    <div class="container">
-        <h2 class="section-title">About Wil & Company</h2>
+    <div class="section-title">
+        <h2>About WIL & COMPANY</h2>
+        <span></span>
+    </div>
+
+    <div class="about-content">
         <p>
-            WIL & COMPANY is an insolvency practitioners firm based
-            in Bulawayo, Zimbabwe. We are committed to providing
-            professional assistance and guidance in insolvency-related
-            matters and helping clients understand the options available
-            to them.
+            WIL & COMPANY Insolvency Practitioners is a
+            professional practice based in Bulawayo, Zimbabwe.
+        </p>
+
+        <p>
+            We aim to provide practical, reliable and
+            professional assistance to individuals,
+            businesses and organisations facing financial,
+            corporate and legal challenges.
+        </p>
+
+        <p>
+            Our approach is built on professionalism,
+            integrity, confidentiality and a commitment
+            to finding appropriate solutions for our clients.
         </p>
     </div>
 </section>
 
 <section class="services" id="services">
-    <div class="container">
-        <h2 class="section-title">Our Services</h2>
+    <div class="section-title">
+        <h2>Our Professional Services</h2>
+        <span></span>
+        <p>
+            A range of professional services to meet the
+            needs of individuals, businesses and organisations.
+        </p>
+    </div>
 
-        <div class="service-grid">
+    <div class="service-grid">
 
-            <div class="service-card">
-                <h3>Company Liquidation</h3>
-                <p>Assistance with company liquidation processes and related matters.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Corporate Insolvency</h3>
-                <p>Guidance on corporate insolvency matters and available options.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Business Restructuring</h3>
-                <p>Assistance with business restructuring and related processes.</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Business Advisory</h3>
-                <p>Professional guidance on business-related financial and insolvency matters.</p>
-            </div>
-
+        <div class="service-card">
+            <div class="service-number">01</div>
+            <h3>Company Liquidation</h3>
+            <p>
+                Assistance with the orderly winding up
+                of companies in accordance with applicable
+                insolvency laws and procedures.
+            </p>
         </div>
+
+        <div class="service-card">
+            <div class="service-number">02</div>
+            <h3>Corporate Insolvency</h3>
+            <p>
+                Professional assistance with corporate
+                insolvency matters, creditor claims and
+                related proceedings.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">03</div>
+            <h3>Corporate Rescue</h3>
+            <p>
+                Assistance with business rescue options
+                and processes for financially distressed
+                companies where appropriate.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">04</div>
+            <h3>Business Restructuring</h3>
+            <p>
+                Guidance on business reorganisation,
+                financial restructuring and strategies
+                for addressing business difficulties.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">05</div>
+            <h3>Business Advisory</h3>
+            <p>
+                Professional guidance to businesses
+                dealing with financial and operational
+                challenges.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">06</div>
+            <h3>Deceased Estates Administration</h3>
+            <p>
+                Assistance with the administration,
+                management and winding up of deceased
+                estates.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">07</div>
+            <h3>Debt Collection and Recovery</h3>
+            <p>
+                Assistance with the recovery of outstanding
+                debts and the management of creditor
+                claims through appropriate processes.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">08</div>
+            <h3>Conveyancing and Property Transfers</h3>
+            <p>
+                Assistance with property transactions,
+                conveyancing procedures and property
+                transfer processes through appropriately
+                qualified legal practitioners.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">09</div>
+            <h3>Divorce and Family Law</h3>
+            <p>
+                Assistance with divorce-related matters
+                and family law processes through
+                appropriately qualified legal practitioners.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-number">10</div>
+            <h3>Labour and Employment Law</h3>
+            <p>
+                Assistance with employment disputes,
+                workplace matters and labour-related
+                proceedings.
+            </p>
+        </div>
+
     </div>
 </section>
 
 <section class="contact" id="contact">
-    <div class="container">
-        <h2 class="section-title">Contact Us</h2>
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <span></span>
+        <p>
+            Get in touch with our office for professional
+            enquiries and assistance.
+        </p>
+    </div>
 
-        <p>We welcome your enquiries.</p>
+    <div class="contact-grid">
 
-        <div class="contact-details">
-
+        <div class="contact-card">
+            <h3>Telephone</h3>
             <p>
-                <strong>Telephone:</strong>
-                <a href="tel:+263292264190">+263 292 264 190</a>
+                <a href="tel:+263292264190">
+                    +263 292 264 190
+                </a>
             </p>
+        </div>
 
+        <div class="contact-card">
+            <h3>WhatsApp</h3>
             <p>
-                <strong>WhatsApp:</strong>
-                <a href="https://wa.me/263779084912">+263 779 084 912</a>
+                <a href="https://wa.me/263779084912"
+                   target="_blank">
+                    +263 779 084 912
+                </a>
             </p>
+        </div>
 
+        <div class="contact-card">
+            <h3>Email Address</h3>
             <p>
-                <strong>Email:</strong>
                 <a href="mailto:wilandcompanypractitioners@gmail.com">
                     wilandcompanypractitioners@gmail.com
                 </a>
             </p>
+        </div>
 
+        <div class="contact-card">
+            <h3>Office Address</h3>
             <p>
-                <strong>Office Address:</strong><br>
-                Suite 703, 7th Floor, LAPF House,<br>
-                8th Avenue, between Jason Moyo and Fife Street,<br>
+                Suite 703, 7th Floor,<br>
+                LAPF House,<br>
+                Between Jason Moyo and Fife Street,<br>
                 Bulawayo, Zimbabwe.
             </p>
-
-            <a class="contact-button"
-               href="https://wa.me/263779084912">
-                Chat With Us on WhatsApp
-            </a>
-
         </div>
+
     </div>
 </section>
 
-<section class="map-section" id="location">
-    <div class="container">
-        <h2 class="section-title">Find Our Office</h2>
-
-        <p>
-            Visit us at Suite 703, 7th Floor, LAPF House,
-            Bulawayo, Zimbabwe.
-        </p>
-
-        <iframe
-            class="map-frame"
-            src="https://www.google.com/maps?q=LAPF+House,+8th+Avenue+and+Jason+Moyo,+Bulawayo,+Zimbabwe&output=embed"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Google Maps location of LAPF House, Bulawayo">
-        </iframe>
-
-        <a class="map-link"
-           href="https://www.google.com/maps/search/?api=1&query=LAPF+House+8th+Avenue+Jason+Moyo+Bulawayo+Zimbabwe"
-           target="_blank"
-           rel="noopener">
-            Get Directions on Google Maps
-        </a>
+<section class="map-section">
+    <div class="section-title">
+        <h2>Find Our Office</h2>
+        <span></span>
     </div>
+
+    <iframe
+        src="https://www.google.com/maps?q=LAPF+House,+8th+Avenue+and+Jason+Moyo,+Bulawayo,+Zimbabwe&output=embed"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+    <br>
+
+    <a class="directions-button"
+       href="https://www.google.com/maps/search/?api=1&query=LAPF+House+8th+Avenue+Jason+Moyo+Bulawayo+Zimbabwe"
+       target="_blank">
+        Get Directions on Google Maps
+    </a>
 </section>
 
 <footer>
-    <p>© 2026 WIL & COMPANY Insolvency Practitioners.</p>
-    <p>Suite 703, 7th Floor, LAPF House, Bulawayo, Zimbabwe.</p>
+    <p><span>WIL & COMPANY</span></p>
+    <p>INSOLVENCY PRACTITIONERS</p>
+    <p>Guidance. Solutions. A Fresh Start.</p>
+    <p>
+        &copy; 2026 WIL & COMPANY.
+        All Rights Reserved.
+    </p>
+    <p>Bulawayo, Zimbabwe.</p>
 </footer>
 
 </body>
