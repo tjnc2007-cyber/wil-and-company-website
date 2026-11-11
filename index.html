@@ -4,10 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>WIL & COMPANY | Insolvency Practitioners</title>
-
-<meta name="description" content="WIL & COMPANY Insolvency Practitioners, providing corporate rescue, liquidation, debt recovery, deceased estates, conveyancing and related professional services in Bulawayo, Zimbabwe.">
+<meta name="description" content="WIL & COMPANY Insolvency Practitioners in Bulawayo, Zimbabwe. Professional insolvency, corporate rescue, debt recovery and related services.">
 
 <style>
 * {
@@ -16,8 +14,13 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
+html { scroll-behavior: smooth; }
+
+:root {
+    --navy: #101f36;
+    --gold: #c6a45c;
+    --white: #ffffff;
+    --grey: #eef1f5;
 }
 
 body {
@@ -25,14 +28,6 @@ body {
     background: #f5f6f8;
     color: #303846;
     line-height: 1.7;
-}
-
-:root {
-    --navy: #101f36;
-    --navy-light: #1b3150;
-    --gold: #c6a45c;
-    --white: #ffffff;
-    --grey: #eef1f5;
 }
 
 header {
@@ -61,7 +56,6 @@ header {
 .logo-text h1 {
     font-size: 23px;
     letter-spacing: 2px;
-    color: white;
 }
 
 .logo-text p {
@@ -84,18 +78,16 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
-    color: var(--gold);
-}
+nav a:hover { color: var(--gold); }
 
 .hero {
     background: linear-gradient(
-        rgba(16,31,54,0.92),
-        rgba(16,31,54,0.92)
+        rgba(16,31,54,0.94),
+        rgba(16,31,54,0.94)
     );
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 90px 20px;
 }
 
 .hero h2 {
@@ -105,9 +97,7 @@ nav a:hover {
     line-height: 1.3;
 }
 
-.hero h2 span {
-    color: var(--gold);
-}
+.hero h2 span { color: var(--gold); }
 
 .hero p {
     max-width: 680px;
@@ -116,24 +106,54 @@ nav a:hover {
     color: #e2e6ed;
 }
 
-.hero-button {
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.contact-button {
     display: inline-block;
-    margin-top: 15px;
-    padding: 13px 27px;
+    padding: 13px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.call-button {
     background: var(--gold);
     color: var(--navy);
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 4px;
 }
 
-.hero-button:hover {
+.whatsapp-button {
+    background: #168b50;
+    color: white;
+}
+
+.email-button {
     background: white;
+    color: var(--navy);
 }
 
-section {
-    padding: 75px 7%;
+.contact-button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
 }
+
+.hero-link {
+    display: inline-block;
+    margin-top: 28px;
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section { padding: 75px 7%; }
 
 .section-title {
     text-align: center;
@@ -163,13 +183,9 @@ section {
     margin: auto;
 }
 
-.about-content p {
-    margin-bottom: 16px;
-}
+.about-content p { margin-bottom: 16px; }
 
-.services {
-    background: var(--grey);
-}
+.services { background: var(--grey); }
 
 .service-grid {
     display: grid;
@@ -186,9 +202,7 @@ section {
     transition: transform 0.2s;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
-}
+.service-card:hover { transform: translateY(-5px); }
 
 .service-card h3 {
     color: var(--navy);
@@ -201,16 +215,7 @@ section {
     color: #596271;
 }
 
-.service-number {
-    color: var(--gold);
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.contact {
-    background: white;
-}
+.contact { background: white; }
 
 .contact-grid {
     display: grid;
@@ -235,9 +240,9 @@ section {
     overflow-wrap: anywhere;
 }
 
-.contact-card a:hover {
-    color: #a27b32;
-}
+.contact-card a:hover { color: #a27b32; }
+
+.contact-section-buttons { margin-top: 35px; }
 
 .map-section {
     background: var(--grey);
@@ -280,9 +285,7 @@ footer p {
     margin: 5px;
 }
 
-footer span {
-    color: var(--gold);
-}
+footer span { color: var(--gold); }
 
 @media(max-width: 700px) {
     header {
@@ -290,26 +293,20 @@ footer span {
         text-align: center;
     }
 
-    .logo-area {
-        justify-content: center;
-    }
+    .logo-area { justify-content: center; }
 
     nav {
         justify-content: center;
         gap: 13px;
     }
 
-    .hero h2 {
-        font-size: 29px;
-    }
+    .hero h2 { font-size: 29px; }
 
-    section {
-        padding: 55px 6%;
-    }
+    section { padding: 55px 6%; }
 
-    .section-title h2 {
-        font-size: 26px;
-    }
+    .section-title h2 { font-size: 26px; }
+
+    .contact-button { width: 100%; max-width: 300px; }
 }
 </style>
 </head>
@@ -346,8 +343,22 @@ footer span {
         rescue, debt recovery, estates and related services.
     </p>
 
-    <a href="#services" class="hero-button">
-        Explore Our Services
+    <div class="contact-buttons">
+        <a class="contact-button call-button"
+           href="tel:+263292264190">Call Us</a>
+
+        <a class="contact-button whatsapp-button"
+           href="https://wa.me/263779084912"
+           target="_blank">WhatsApp Us</a>
+
+        <a class="contact-button email-button"
+           href="mailto:wilandcompanypractitioners@gmail.com">
+           Email Us
+        </a>
+    </div>
+
+    <a href="#services" class="hero-link">
+        Explore Our Services →
     </a>
 </section>
 
@@ -391,7 +402,6 @@ footer span {
     <div class="service-grid">
 
         <div class="service-card">
-            <div class="service-number">01</div>
             <h3>Company Liquidation</h3>
             <p>
                 Assistance with the orderly winding up
@@ -401,7 +411,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">02</div>
             <h3>Corporate Insolvency</h3>
             <p>
                 Professional assistance with corporate
@@ -411,7 +420,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">03</div>
             <h3>Corporate Rescue</h3>
             <p>
                 Assistance with business rescue options
@@ -421,7 +429,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">04</div>
             <h3>Business Restructuring</h3>
             <p>
                 Guidance on business reorganisation,
@@ -431,7 +438,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">05</div>
             <h3>Business Advisory</h3>
             <p>
                 Professional guidance to businesses
@@ -441,7 +447,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">06</div>
             <h3>Deceased Estates Administration</h3>
             <p>
                 Assistance with the administration,
@@ -451,7 +456,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">07</div>
             <h3>Debt Collection and Recovery</h3>
             <p>
                 Assistance with the recovery of outstanding
@@ -461,7 +465,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">08</div>
             <h3>Conveyancing and Property Transfers</h3>
             <p>
                 Assistance with property transactions,
@@ -472,7 +475,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">09</div>
             <h3>Divorce and Family Law</h3>
             <p>
                 Assistance with divorce-related matters
@@ -482,7 +484,6 @@ footer span {
         </div>
 
         <div class="service-card">
-            <div class="service-number">10</div>
             <h3>Labour and Employment Law</h3>
             <p>
                 Assistance with employment disputes,
@@ -545,6 +546,20 @@ footer span {
         </div>
 
     </div>
+
+    <div class="contact-buttons contact-section-buttons">
+        <a class="contact-button call-button"
+           href="tel:+263292264190">Call Us</a>
+
+        <a class="contact-button whatsapp-button"
+           href="https://wa.me/263779084912"
+           target="_blank">WhatsApp Us</a>
+
+        <a class="contact-button email-button"
+           href="mailto:wilandcompanypractitioners@gmail.com">
+           Email Us
+        </a>
+    </div>
 </section>
 
 <section class="map-section">
@@ -572,10 +587,7 @@ footer span {
     <p><span>WIL & COMPANY</span></p>
     <p>INSOLVENCY PRACTITIONERS</p>
     <p>Guidance. Solutions. A Fresh Start.</p>
-    <p>
-        &copy; 2026 WIL & COMPANY.
-        All Rights Reserved.
-    </p>
+    <p>&copy; 2019 WIL & COMPANY. All Rights Reserved.</p>
     <p>Bulawayo, Zimbabwe.</p>
 </footer>
 
