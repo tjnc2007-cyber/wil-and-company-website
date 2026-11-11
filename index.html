@@ -4,77 +4,48 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wil and Company | Insolvency Practitioners</title>
+<title>WIL & COMPANY | Insolvency Practitioners</title>
 <style>
-* { box-sizing: border-box; }
-body {
- margin: 0;
- font-family: Arial, sans-serif;
- color: #263449;
- background: white;
-}
-header {
- background: #142B4A;
- color: white;
- padding: 20px;
- display: flex;
- justify-content: space-between;
- align-items: center;
- flex-wrap: wrap;
-}
-.logo { font-size: 19px; font-weight: bold; }
-nav a {
- color: white;
- text-decoration: none;
- margin: 8px;
- font-size: 13px;
-}
-.hero {
- background: linear-gradient(90deg, #142B4A, #43566D);
- color: white;
- padding: 85px 25px;
- text-align: center;
-}
-.hero h1 { font-size: 34px; }
-.hero p { font-size: 17px; line-height: 1.7; }
-.btn {
- display: inline-block;
- background: white;
- color: #142B4A;
- padding: 14px 25px;
- text-decoration: none;
- border-radius: 4px;
- margin-top: 15px;
- font-weight: bold;
-}
-section { padding: 55px 25px; text-align: center; }
-h2 { color: #142B4A; }
-.about { background: #f1f3f5; }
-.services {
- display: grid;
- grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
- gap: 20px;
- max-width: 1000px;
- margin: 30px auto;
-}
-.service {
- padding: 25px;
- border: 1px solid #ddd;
- border-radius: 6px;
-}
-.service h3 { color: #142B4A; }
-footer {
- background: #142B4A;
- color: white;
- padding: 30px;
- text-align: center;
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;color:#263449;line-height:1.7}
+header{background:#142b4a;color:white;padding:20px 7%;
+display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.brand{font-size:25px;font-weight:bold;letter-spacing:2px}
+.brand small{display:block;font-size:12px;font-weight:normal;letter-spacing:3px}
+nav a{color:white;text-decoration:none;margin:10px;font-size:14px}
+.hero{background:linear-gradient(90deg,#10233d,#344d69);
+color:white;text-align:center;padding:110px 20px}
+.hero h1{font-size:42px;margin-bottom:20px}
+.hero p{max-width:650px;margin:auto;font-size:18px}
+.btn{display:inline-block;background:white;color:#142b4a;
+padding:13px 27px;margin-top:25px;text-decoration:none;
+font-weight:bold;border-radius:4px}
+section{padding:75px 8%;text-align:center}
+h2{color:#142b4a;font-size:30px;margin-bottom:20px}
+.about{background:#f1f3f5}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;margin-top:35px}
+.service{padding:30px 20px;border:1px solid #ddd;
+border-radius:5px;background:white}
+.service h3{color:#142b4a;margin-bottom:12px}
+.service p{color:#687486}
+.contact{background:#e9edf1}
+footer{background:#142b4a;color:white;text-align:center;padding:30px}
+@media(max-width:600px){
+.hero h1{font-size:30px}
+header{justify-content:center;text-align:center;gap:15px}
+nav a{margin:5px;font-size:12px}
+section{padding:55px 6%}
 }
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">WIL & COMPANY</div>
+<div class="brand">
+WIL & COMPANY
+<small>INSOLVENCY PRACTITIONERS</small>
+</div>
 <nav>
 <a href="#home">Home</a>
 <a href="#about">About</a>
@@ -84,48 +55,50 @@ footer {
 </header>
 
 <div class="hero" id="home">
-<h1>Professional Insolvency Practitioners</h1>
-<p>Providing professional insolvency and business advisory services in Bulawayo, Zimbabwe.</p>
-<a class="btn" href="#contact">Contact Our Firm</a>
+<h1>Professional Insolvency Solutions</h1>
+<p>Professional guidance and support for businesses and individuals navigating financial challenges.</p>
+<a href="#contact" class="btn">CONTACT OUR FIRM</a>
 </div>
 
 <section class="about" id="about">
-<h2>About Wil and Company</h2>
-<p>Wil and Company Insolvency Practitioners provides professional support and guidance in insolvency-related matters, helping businesses and individuals navigate financial challenges.</p>
+<h2>Welcome to Wil & Company</h2>
+<p>Wil & Company Insolvency Practitioners is based in Bulawayo, Zimbabwe. We aim to provide professional guidance and practical support in insolvency and related business matters.</p>
 </section>
 
 <section id="services">
 <h2>Our Services</h2>
+<p>Professional support for complex financial and business challenges.</p>
 <div class="services">
 <div class="service">
-<h3>Liquidation</h3>
-<p>Professional assistance with company liquidation processes.</p>
+<h3>Company Liquidation</h3>
+<p>Support with company liquidation processes and related matters.</p>
 </div>
 <div class="service">
 <h3>Corporate Insolvency</h3>
-<p>Guidance on corporate insolvency matters and procedures.</p>
+<p>Professional guidance on corporate insolvency matters.</p>
+</div>
+<div class="service">
+<h3>Business Restructuring</h3>
+<p>Support in exploring business restructuring options.</p>
 </div>
 <div class="service">
 <h3>Business Advisory</h3>
-<p>Practical advice to help businesses navigate financial difficulties.</p>
-</div>
-<div class="service">
-<h3>Restructuring</h3>
-<p>Support with business restructuring and financial recovery options.</p>
+<p>Practical guidance for businesses facing financial difficulties.</p>
 </div>
 </div>
 </section>
 
-<section class="about" id="contact">
-<h2>Contact Us</h2>
-<p>Wil and Company Insolvency Practitioners</p>
+<section class="contact" id="contact">
+<h2>Get In Touch</h2>
+<p>Wil & Company Insolvency Practitioners</p>
 <p>Bulawayo, Zimbabwe</p>
-<p>Contact our office for professional enquiries.</p>
+<p>Contact our office to make an enquiry.</p>
 </section>
 
 <footer>
-<p>© 2026 Wil and Company Insolvency Practitioners</p>
+<p>WIL & COMPANY | INSOLVENCY PRACTITIONERS</p>
 <p>Bulawayo, Zimbabwe</p>
+<p>© 2026 Wil & Company. All rights reserved.</p>
 </footer>
 
 </body>
